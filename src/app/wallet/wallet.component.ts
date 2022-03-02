@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-wallet',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./wallet.component.css']
 })
 export class WalletComponent implements OnInit {
+
+  plusSquare = faPlusSquare;
 
   constructor() { }
 
