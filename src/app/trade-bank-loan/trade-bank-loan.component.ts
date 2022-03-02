@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCheckCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-trade-bank-loan',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trade-bank-loan.component.css']
 })
 export class TradeBankLoanComponent implements OnInit {
+
+  checkCircle = faCheckCircle;
+  timesCircle = faTimesCircle;
 
   constructor() { }
 
