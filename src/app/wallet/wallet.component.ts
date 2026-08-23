@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -6,6 +6,7 @@ import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
     selector: 'app-wallet',
     templateUrl: './wallet.component.html',
     styleUrls: ['./wallet.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class WalletComponent implements OnInit {
