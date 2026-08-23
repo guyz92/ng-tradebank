@@ -1,14 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TradeBankOfferComponent } from './trade-bank-offer.component';
 
 describe('TradeBankOfferComponent', () => {
   let component: TradeBankOfferComponent;
   let fixture: ComponentFixture<TradeBankOfferComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ TradeBankOfferComponent ]
+      declarations: [ TradeBankOfferComponent ],
+      imports: [ FontAwesomeModule ] 
     })
     .compileComponents();
   }));
